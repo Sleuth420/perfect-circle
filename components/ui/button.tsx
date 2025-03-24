@@ -5,7 +5,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function Button({ className = "", variant = "default", ...props }: ButtonProps) {
-  const baseStyles = "rounded-md px-6 py-2 transition-colors"
+  const baseStyles = "inline-flex items-center justify-center transition-colors"
   const variantStyles = variant === "default" 
     ? "bg-white text-black hover:bg-gray-200"
     : "border border-white text-white hover:bg-gray-800"
